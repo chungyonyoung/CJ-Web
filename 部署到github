@@ -1,5 +1,0 @@
-部署文件到github>>
-git remote add origin https://github.com/your-username/my-personal-website.git(仓库地址)
-git branch -M main
-git push -u origin main
-
