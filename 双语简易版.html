@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People-长江</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto; 
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 160px;
+            height: 170px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        p {
+            padding:0px;
+            margin: 10px 0;
+        }                 
+        h2 {
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .language-switcher {
+            text-align: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-switcher button {
+            background-color: #719ac3;
+            color: rgb(216, 196, 196);
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+        .language-switcher button:hover {
+            background-color: #5d9bde;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button onclick="switchLanguage('zh')">中文</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+
+        <div class="header">
+            <img src="蓝底证件照.jpg" alt="个人照片"  width="160" height="170">
+            <h1>杨长江</h1> 
+            <!-- <p>中共党员</p>  -->
+        </div>
+        <section>
+            <h2 id="about-title">自我介绍</h2>
+            <p id="about-text">Hello world!（个人陈述）</p>
+        </section>
+        <section><!--教育经历 -->
+            <h2 id="about-">教育背景</h2>
+            <div class="education">
+                <ul>
+                    <li>
+                        <h3>重庆大学</h3>
+                        <p>2021.9-2023.7&emsp;&nbsp;弘深学院-数理试验班&nbsp;<span style="color: #6d6b6b;">(入学特殊选拔)</span></p>
+                        <p>2023.7-至今&emsp;&emsp;&nbsp;物理学院-物理学&nbsp;<span style="color: #6d6b6b;">(专业分流)</span></p>
+                        <p>2023.2-至今&emsp;&emsp;&nbsp;重庆大学-中国科学院物理研究所“严济慈物理英才班”</p>
+                        <p>2023.9-至今&emsp;&emsp;&nbsp;重庆大学-中国科学院高能物理研究所“钱三强英才班”</p>  
+                    </li>
+                </ul>
+              
+                    
+                        <h4>主修课程成绩</h4>
+                        <p>数学物理方法(91)&emsp;热力学与统计物理(86)&emsp;量子力学(81)&emsp;电动力学(81)&emsp;计算物理(82)
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;普通物理ⅠⅡⅢ(88&nbsp;90&nbsp;92)&emsp;
+                            物理实验ⅠⅡⅢ(87&nbsp;98&nbsp;95)&emsp;凝聚态物理导论(96)&emsp;大数据基础及应用(93)
+                        </p>
+                    
+
+                
+            </div>
+        </section>
+        <section><!--科研竞赛-->
+            <h2>科研竞赛</h2>
+            <div class="experience">
+                <ul>
+                    <li>
+                        <h3>2023.8&emsp;重庆大学-中科院物理所科研实践项目(项目名称：Akiyama探针镀膜)&nbsp;| 核心成员</h3>
+                        <p>&emsp;&emsp;项目着眼于通过对原子力显微镜（AFM）中的Akiyama探针进行金属镀膜，以增强针尖的信号并减少实验成本。</p>
+                        <p>&emsp;&emsp;主要负责查阅相关的学术文献和专利，以及调研北京地区支持该技术的实验平台。经过详细评估，我选择了磁控溅射技术结合特定的控温组件来进行镀膜，
+                            确定了中科院物理所微加工实验室（怀柔）作为最合适的实验平台。此外，我还制定了一套详细的实验工艺流程。</p>
+
+                        <h3>2022.5-2023.5&emsp; 重庆大学大学生科研训练计划项目（项目名称：量子纠缠的度量研究） | 队员</h3>
+                        <p>&emsp;&emsp;</p>
+                        <p>&emsp;&emsp;</p>
+
+                        <h3>2023.8&emsp; | 核心成员</h3>
+                        <p>&emsp;&emsp;</p>
+                        <p>&emsp;&emsp;</p>
+
+                        <h3>2023.8&emsp; | 核心成员</h3>
+                        <p>&emsp;&emsp;</p>
+                        <p>&emsp;&emsp;</p>
+
+                            
+                            
+                    </li>
+                    <li>
+                        <h3>公司名称</h3>
+                        <p>职位 (年份)</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section><!--荣誉奖励-->
+            <h2>荣誉奖励</h2>
+            <div class="Awards">
+                <ul>
+                    <li>
+                        <p>National Encouragement Scholarship (2%) （2023.12 ）</p>
+                    </li>
+                    <li>
+                        <p>Excellent Student of Chongqing University （2023.10 ）</p>
+                    </li>
+                    <li>
+                        <p>Excellent Student Leader of Chongqing University （2022.11）</p>
+                    </li>
+                    <li>
+                        <p>First-class Scholarship for Outstanding Students of Chongqing University （2023.10）</p>
+                    </li>
+                    <li>
+                        <p>Chongqing University Excellent Student Second-Class Scholarship （2022.11 ）</p>
+                    </li>
+                    <li>
+                        <p>Chongqing University Excellent Student Third-class Scholarship (twice) （2023.5  2024.5） </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section><!--实践经历-->
+            <h2>实践经历</h2>
+            <div class="Experienced social practice">
+                <ul>
+                    <li>
+                        <h3>重庆大学弘深学院数理试验班 | 班长(2021.9-2023.7)</h3>
+                        <p> &emsp;&emsp;作为班长,我担负着组织和推动班级各项活动及共同学习的责任。通过持续优化活动内容和形式，
+                            我致力于提升班级活动的参与度和教育成效。我的努力得到了师生的广泛赞誉，并因工作表现突出，
+                            荣获学校评选的优秀学生干部(全院共5人)。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section><!--个人技能-->
+            <h2>个人技能</h2>
+            <div class="skill">
+                <ul>
+                    <li>
+                        <p><span style="font-weight: bold;">CET-4(546)、CET-6(475)</span>、熟悉Python、MATLAB、Mathematica、R等语言，3ds Max、COMSOL等软件</p>
+                    </li>
+                <ul>
+        </section>
+        <section><!--联系方式超链接-->
+            <h2>联系方式</h2>
+            <p class="contact">
+                邮箱： <a href="mailto:changjiang.young@hotmail.com">changjiang.young@hotmail.com</a>
+            </p>
+            <p>电话：19562100474</p>
+            <p>地址：重庆大学虎溪校区</p>
+        </section>
+    </div>
+    <script>
+        const content = {
+            zh: {
+                name: "杨长江",
+                aboutTitle: "自我介绍",
+                aboutText: "hello world!",
+                contactTitle: "联系方式",
+                email: "changjiang.young@hotmail.com"
+            },
+            en: {
+                name: "Chungyon Young",
+                aboutTitle: "About Me",
+                aboutText: "hello world!",
+                contactTitle: "Contact",
+                email: "changjiang.young@hotmail.com"
+            }
+        };
+
+        function switchLanguage(lang) {
+            document.getElementById('name').innerText = content[lang].name;
+            document.getElementById('about-title').innerText = content[lang].aboutTitle;
+            document.getElementById('about-text').innerText = content[lang].aboutText;
+            document.getElementById('contact-title').innerText = content[lang].contactTitle;
+            document.getElementById('email-link').innerText = content[lang].email;
+        }
+    </script>
+</body>
+</html>

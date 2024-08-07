@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        p {
+            margin: 10px 0;
+        }
+        h2 {
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .language-switcher button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+        .language-switcher button:hover {
+            background-color: #004a99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <button onclick="switchLanguage('zh')">中文</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+        <div class="header">
+            <img src="your-photo.jpg" alt="个人照片">
+            <h1 id="name">A</h1>
+            <p id="job">职业：ADC</p>
+        </div>
+        <section>
+            <h2 id="about-title">自我介绍</h2>
+            <p id="about-text">hello world！</p>
+        </section>
+        <section>
+            <h2 id="contact-title">联系方式</h2>
+            <p class="contact">
+                邮箱: <a id="email-link" href="mailto:12138@qq.com">12138@qq.com</a>
+            </p>
+        </section>
+    </div>
+    <script>
+        const content = {
+            zh: {
+                name: "A",
+                job: "职业：ADC",
+                aboutTitle: "自我介绍",
+                aboutText: "hello world！",
+                contactTitle: "联系方式",
+                email: "12138@qq.com"
+            },
+            en: {
+                name: "A",
+                job: "Job: ADC",
+                aboutTitle: "About Me",
+                aboutText: "hello world!",
+                contactTitle: "Contact",
+                email: "12138@qq.com"
+            }
+        };
+
+        function switchLanguage(lang) {
+            document.getElementById('name').innerText = content[lang].name;
+            document.getElementById('job').innerText = content[lang].job;
+            document.getElementById('about-title').innerText = content[lang].aboutTitle;
+            document.getElementById('about-text').innerText = content[lang].aboutText;
+            document.getElementById('contact-title').innerText = content[lang].contactTitle;
+            document.getElementById('email-link').innerText = content[lang].email;
+        }
+    </script>
+</body>
+</html>

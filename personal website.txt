@@ -1,0 +1,41 @@
+npm config set prefix "E:\Application\Node\node_global"
+
+npm config set cache "E:\Application\Node\node_cache"
+E:\Application\Node\node_global\node_modules
+
+这里是一些接下来可以做的事情：
+
+1. 进入博客目录
+首先，切换到刚刚创建的blog目录中：
+
+bash
+Copy code
+cd blog
+2. 启动本地服务器
+在blog目录中，运行以下命令来启动一个本地服务器，这样你就可以在本地预览你的博客了：
+
+bash
+Copy code
+hexo server
+默认情况下，这将在http://localhost:4000启动一个服务器。你可以通过浏览器访问这个地址来查看你的博客。
+
+3. 创建新的博客文章
+要创建一篇新的博客文章，可以使用以下命令：
+
+bash
+Copy code
+hexo new "我的第一篇文章"
+这将在source/_posts目录下创建一个新的Markdown文件。
+
+4. 生成静态文件
+在你做了一些更改后（比如写了一些新的博客文章或修改了配置），你可以通过以下命令来生成静态文件：
+
+bash
+Copy code
+hexo generate
+这将处理你的所有源文件（Markdown、配置等）并生成静态文件在public目录下。
+
+5. 部署到远程服务器
+Hexo支持多种部署方式，包括但不限于GitHub Pages、GitLab Pages等。你需要编辑_config.yml文件中的deploy部分来配置你的部署方式。详细的部署指南可以在Hexo官方文档中找到。
+
+现在，你已经成功设置了你的Hexo博客，并且可以开始博客之旅了！如果有任何问题，Hexo的官方文档是一个很好的资源，同时也有许多在线社区可以提供帮助。

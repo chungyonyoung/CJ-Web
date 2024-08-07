@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A的个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .contact {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>A的个人网页</h1>
+            <p>职业：ADC</p>
+        </header>
+        <section>
+            <h2>自我介绍</h2>
+            <p>hello world！</p>
+        </section>
+        <section>
+            <h2>联系方式</h2>
+            <p class="contact">
+                邮箱: <a href="mailto:12138@qq.com">12138@qq.com</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
+
+
+步骤一：创建GitHub仓库
+登录你的GitHub账号。
+创建一个新的仓库，命名为 <你的用户名>.github.io（这个名字很重要，因为GitHub Pages会自动识别这个命名并部署到公网）。
+初始化仓库时可以选择添加一个 README 文件。
+步骤二：上传HTML文件
+在你的计算机上，将之前创建的HTML文件保存为 index.html。
+打开你新创建的GitHub仓库。
+点击 Add file 按钮，然后选择 Upload files。
+将 index.html 文件拖放到上传区域，或者使用文件选择器选择文件。
+上传完成后，点击页面底部的 Commit changes 按钮。
+步骤三：访问你的网页
+上传完成后，GitHub Pages会自动将你的网页部署到公网。
+你可以通过访问 https://<你的用户名>.github.io 查看你的网页。
+示例
+假设你的GitHub用户名是 exampleuser，你将能够通过 https://exampleuser.github.io 访问你的网页。
